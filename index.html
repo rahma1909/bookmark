@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Danfo&family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+<div class="container-fluid">
+    <div class="container">
+        <div class="h1 position-relative  d-flex justify-content-center align-items-center">
+            
+            <h1 class="header">bookmark</h1>
+           
+        </div>
+
+       <div class="bookmark-body ">
+    <div class=" h2 d-flex justify-content-center align-items-center">
+         
+        <h2 class="my-4">
+            <i class="fa-solid mx-1 fa-bookmark"></i>
+            bookmark your favorite sites
+        
+            <i class="fa-solid mx-1 fa-bookmark"></i></h2>
+    </div>
+              
+    <div class="my-5">
+        <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid mx-1 fa-magnifying-glass"></i>site name </label>
+        <input type="text" class="form-control" id="input1" placeholder="bookmark">
+      </div>
+      <div class="mb-1">
+        <label for="exampleFormControlTextarea1" class="form-label"><i class="fa-solid mx-1 fa-book"></i>site url</label>
+        <input class="form-control" id="input2" placeholder="website url">
+      </div>
+      <div class="b my-5 d-flex justify-content-center align-items-center">
+        <button id="submitbtn" onclick="addBookMark()" class="btn btn-info px-5">Submit</button>
+        <button id="updatebtn" onclick="finalUpdate()" class="btn btn-info px-5 d-none">update</button>
+      </div>
+              
+
+        </div>
+<table class="table text-center mt-5">
+<thead>
+    <th>index</th>
+    <th>websitename</th>
+    <th>visit</th>
+    <th>update</th>
+    <th>delete</th>
+</thead>
+<tbody id="tbody">
+    <!-- <tr>
+        <td>1</td>
+        <td>hello</td>
+        <td><a class="btn btn-primary">visite</a></td>
+        <td><button class="btn btn-success" >update</button></td>
+        <td><button class="btn btn-primary">delete</button></td>
+
+    </tr> -->
+
+</tbody>
+</table>
+       </div>
+     
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
